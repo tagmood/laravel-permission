@@ -13,6 +13,8 @@ class PruneExpired extends Command
 
     public function handle()
     {
+        $tableNames = config('permission.table_names');
+        
         DB::table($tableNames['model_has_roles'])
             ->whereNotNull('expires_at')
             ->where('expires_at', '<', now())
