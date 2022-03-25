@@ -59,6 +59,10 @@ class PermissionServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../database/migrations/create_permission_tables.php.stub' => $this->getMigrationFileName('create_permission_tables.php'),
         ], 'migrations');
+
+        $this->publishes([
+            __DIR__.'/../database/migrations/add_expires_at_fields.php.stub' => $this->getMigrationFileName('add_expires_at_fields.php'),
+        ], 'migrations');
     }
 
     protected function registerCommands()
