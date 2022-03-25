@@ -180,4 +180,15 @@ class CommandTest extends TestCase
             $this->assertRegExp('/\|\s+\|\s+testRole\s+\|\s+testRole2\s+\|\s+testRoleTeam\s+\|\s+testRoleTeam\s+\|/', $output);
         }
     }
+
+    /** @test */
+    public function it_can_prune_expired()
+    {
+        Artisan::call('permission:prune-expired');
+
+        $output = Artisan::output();
+
+        $this->assertTrue(strpos($output, 'Expired roles pruned') !== false);
+        $this->assertTrue(strpos($output, 'Expired permissions pruned') === false);
+    }
 }
