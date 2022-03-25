@@ -1,7 +1,8 @@
 {
-    "name": "spatie/laravel-permission",
+    "name": "tagmood/laravel-permission",
     "description": "Permission handling for Laravel 6.0 and up",
     "keywords": [
+        "tagmood",
         "spatie",
         "laravel",
         "permission",
@@ -11,13 +12,13 @@
         "rbac",
         "security"
     ],
-    "homepage": "https://github.com/spatie/laravel-permission",
+    "homepage": "https://github.com/tagmood/laravel-permission",
     "license": "MIT",
     "authors": [
         {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "homepage": "https://spatie.be",
+            "name": "Fabio Salamone",
+            "email": "info@tagmood.it",
+            "homepage": "https://www.tagmood.it",
             "role": "Developer"
         }
     ],
