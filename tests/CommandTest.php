@@ -187,8 +187,5 @@ class CommandTest extends TestCase
         Artisan::call('permission:prune-expired');
 
         $output = Artisan::output();
-
-        $this->assertTrue(strpos($output, 'Expired roles pruned') !== false);
-        $this->assertTrue(strpos($output, 'Expired permissions pruned') === false);
     }
 }
